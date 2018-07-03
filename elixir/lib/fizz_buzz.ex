@@ -1,7 +1,6 @@
 defmodule FizzBuzz do
   def run do
     1..100
-    |> Enum.to_list()
     |> Enum.map(&fizzbuzz/1)
     |> Enum.each(&IO.puts/1)
   end
